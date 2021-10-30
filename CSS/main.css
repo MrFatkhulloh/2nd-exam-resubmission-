@@ -1,18 +1,9 @@
-/* space-mono-700 - latin */
+/* jost-regular - latin */
 @font-face {
-  font-family: 'Space Mono';
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("../fonts/space-mono-v6-latin-700.woff2") format("woff2"), url("../fonts/space-mono-v6-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* lexend-deca-regular - latin */
-@font-face {
-  font-family: 'Lexend Deca';
+  font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/lexend-deca-v10-latin-regular.woff2") format("woff2"), url("../fonts/lexend-deca-v10-latin-regular.woff") format("woff");
+  src: local(""), url("../fonts/jost-v6-latin-regular.woff2") format("woff2"), url("../fonts/jost-v6-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -26,12 +17,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Jost, Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+}
+
+img {
   vertical-align: middle;
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1151px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -42,9 +37,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 h2, h3, h4 {
@@ -61,5 +53,54 @@ h2, h3, h4 {
   overflow: hidden;
   border: none;
   clip: rect(0 0 0 0);
+}
+
+.header__container {
+  padding: 50px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__nav__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.header__nav__item:first-child a {
+  padding-left: 0;
+}
+
+.header__nav__item:last-child a {
+  padding-right: 0;
+}
+
+.header__nav__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #333136;
+  padding: 21px;
+}
+
+.header__img-wrapper {
+  position: relative;
+  padding: 0;
+  padding-left: 42.7px;
+}
+
+.header__img-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg at 50% 50%, #E7816B 0deg, rgba(231, 129, 107, 0.0001) 359.74deg, rgba(231, 129, 107, 0.0001) 360deg);
 }
 /*# sourceMappingURL=main.css.map */
