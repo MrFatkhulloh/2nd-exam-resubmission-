@@ -1,0 +1,41 @@
+@mixin btn-dark {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 18px 25px 16px 24px;
+    // text
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $dark-grey;
+
+    &:hover {
+        background-color: $light-peach;
+        // text
+        color: #FFFFFF;
+    }
+}
+
+@mixin btn-light {
+    background: $peach;
+    border-radius: 8px;
+    padding: 18px 25px 16px 24px;
+    // text
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:hover {
+        background-color: $light-peach;
+        // text
+        color: #FFFFFF;
+    }
+}
