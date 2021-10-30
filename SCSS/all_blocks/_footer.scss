@@ -1,0 +1,104 @@
+.footer {
+    background-color: $black;
+    padding-top: 144px;
+    .footer-top {
+        
+        margin-bottom: 72px;
+        
+        &__container {
+            padding: 50px 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        &__nav {
+            &__list {
+                list-style-type: none;
+                padding: 0;
+            }
+            
+            &__item {
+                &:first-child a {
+                    padding-left: 0;
+                }
+                &:last-child a {
+                    padding-right: 0;
+                }
+            }
+            
+            &__link {
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 14px;
+                letter-spacing: 2px;
+                color: #fff;
+                padding: 21px;
+            }
+        }
+        
+        &__img-wrapper {
+            position: relative;
+            padding: 0;
+            padding-left: 42.7px;
+            
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                background: conic-gradient(from 0deg at 50% 50%, #E7816B
+                0deg, rgba(231, 129, 107, 0.0001) 359.74deg, rgba(231, 129, 107, 0.0001) 360deg);
+            }
+        }
+    }
+    
+    .footer-bottom {
+        
+        &__container {
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &__info-wrapper {
+            font-style: normal;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+
+        &__address {
+            margin-right: 205px;
+        }
+        
+        &__address-heading {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        
+        &__address-text, &__contact-text {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            margin: 0;
+        }
+
+        &__list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        &__item {
+            a {
+                padding: 8px;
+            }
+        }
+        
+        
+    }
+}
