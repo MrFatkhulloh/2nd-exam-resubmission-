@@ -7,6 +7,15 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/* jost-500 - latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/jost-v6-latin-500.woff2") format("woff2"), url("../fonts/jost-v6-latin-500.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 *,
 *::before,
 *::after {
@@ -102,5 +111,80 @@ h2, h3, h4 {
   height: 24px;
   border-radius: 50%;
   background: conic-gradient(from 0deg at 50% 50%, #E7816B 0deg, rgba(231, 129, 107, 0.0001) 359.74deg, rgba(231, 129, 107, 0.0001) 360deg);
+}
+
+.hero {
+  color: #fff;
+  margin-bottom: 160px;
+}
+
+.hero__container {
+  position: relative;
+  background-color: #E7816B;
+  padding: 145px 476px 161px 95px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.hero__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 44.5%;
+  width: 640px;
+  height: 640px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(93, 2, 2, 0.0001)), to(rgba(93, 2, 2, 0.497569)));
+  background: linear-gradient(0deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+  mix-blend-mode: normal;
+  border-radius: 50%;
+  opacity: 0.31;
+}
+
+.hero__info-text {
+  z-index: 2;
+}
+
+.hero__heading {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  max-width: 540px;
+  margin-bottom: 32px;
+  z-index: 2;
+}
+
+.hero__text {
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 445px;
+  margin: 0;
+  margin-bottom: 58px;
+}
+
+.hero__link {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 18px 25px 16px 24px;
+  text-decoration: none;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333136;
+}
+
+.hero__link:hover {
+  background-color: #FFAD9B;
+  color: #FFFFFF;
+}
+
+.hero__img-wrapper img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 /*# sourceMappingURL=main.css.map */

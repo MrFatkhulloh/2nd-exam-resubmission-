@@ -1,0 +1,61 @@
+.hero {
+    color: #fff;
+    margin-bottom: 160px;
+    
+    &__container {
+        position: relative;
+        background-color: $peach;
+        padding: 145px 476px 161px 95px;
+        // figma code
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 44.5%;
+            width: 640px;
+            height: 640px;
+            background: linear-gradient(0deg, rgba(93, 2, 2, 0.0001) 0%, rgba(93, 2, 2, 0.497569) 100%);
+            mix-blend-mode: normal;
+            border-radius: 50%;
+            opacity: 0.31;
+        }
+    }
+
+    &__info-text {        
+        z-index: 2;
+    }
+    
+    &__heading {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 48px;
+        max-width: 540px;
+        margin-bottom: 32px;
+        z-index: 2;
+    }
+    
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 445px;
+        margin: 0;
+        margin-bottom: 58px;
+        
+    }
+    
+    &__link {
+        @include btn-dark
+    }
+
+    &__img-wrapper {
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    
+}
