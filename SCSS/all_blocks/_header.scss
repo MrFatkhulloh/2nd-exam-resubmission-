@@ -27,6 +27,9 @@
             letter-spacing: 2px;
             color: $dark-grey;
             padding: 21px;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 

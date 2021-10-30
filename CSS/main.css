@@ -96,6 +96,10 @@ h2, h3, h4 {
   padding: 21px;
 }
 
+.header__nav__link:hover {
+  text-decoration: underline;
+}
+
 .header__img-wrapper {
   position: relative;
   padding: 0;
@@ -141,10 +145,6 @@ h2, h3, h4 {
   opacity: 0.31;
 }
 
-.hero__info-text {
-  z-index: 2;
-}
-
 .hero__heading {
   font-weight: 500;
   font-size: 48px;
@@ -185,7 +185,48 @@ h2, h3, h4 {
 .hero__img-wrapper img {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 50%;
+  -webkit-transform: translateX(56%);
+          transform: translateX(56%);
+}
+
+@media only screen and (max-width: 800px) {
+  .hero__container {
+    text-align: center;
+    padding: 0;
+    padding: 68px 58px 473px 58px;
+  }
+  .hero__container::before {
+    overflow: hidden;
+    top: 110px;
+    left: 21%;
+  }
+  .hero__info-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__heading {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .hero__text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 37px;
+  }
+  .hero img {
+    width: 380px;
+    height: 490px;
+  }
 }
 
 .we-can-do {
@@ -425,6 +466,10 @@ h2, h3, h4 {
   letter-spacing: 2px;
   color: #fff;
   padding: 21px;
+}
+
+.footer .footer-top__nav__link:hover {
+  text-decoration: underline;
 }
 
 .footer .footer-top__img-wrapper {
