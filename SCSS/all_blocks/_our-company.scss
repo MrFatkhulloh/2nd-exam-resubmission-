@@ -1,6 +1,21 @@
 .our-company {
     margin-bottom: 380px;
 
+    &__container {
+        position: relative;
+        &::before {
+            content: url(./../../images/our-company/Rectangle\ Copy\ 4.svg);
+            width: 1006px;
+            height: 594px;
+            position: absolute;
+            top: 10%;
+            right: -5%;
+            z-index: -1;
+            display: block;
+
+        }
+    }
+
     &__list {
         list-style-type: none;
         text-align: center;

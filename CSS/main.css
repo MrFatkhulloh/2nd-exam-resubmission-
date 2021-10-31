@@ -131,6 +131,16 @@ h2, h3, h4 {
   border-radius: 15px;
 }
 
+.hero__container::after {
+  content: url(./../../images/hero/Rectangle.svg);
+  width: 1006px;
+  height: 594px;
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  z-index: -1;
+}
+
 .hero__container::before {
   content: "";
   position: absolute;
@@ -197,7 +207,6 @@ h2, h3, h4 {
     padding: 68px 58px 473px 58px;
   }
   .hero__container::before {
-    overflow: hidden;
     top: 110px;
     left: 21%;
   }

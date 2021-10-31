@@ -9,6 +9,21 @@
             padding: 50px 20px;
             align-items: center;
             justify-content: space-between;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 1111px;
+                height: 2px;
+                border: 1px solid red;
+                background-color: #fff;
+                opacity: 0.1;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+            }
         }
         
         &__nav {
